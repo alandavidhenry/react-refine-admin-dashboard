@@ -50,7 +50,7 @@ const wsClient = createClient({ url: WS_URL });
 
 function App() {
   return (
-    <BrowserRouter>
+    (<BrowserRouter>
       <GitHubBanner />
       <RefineKbarProvider>
         <ColorModeContextProvider>
@@ -89,6 +89,7 @@ function App() {
                   warnWhenUnsavedChanges: true,
                   useNewQueryKeys: true,
                   liveMode: "auto",
+                  projectId: "qbyjIn-fQHQai-zd35Vx"
                 }}
               >
                 <Routes>
@@ -153,7 +154,7 @@ function App() {
           </AntdApp>
         </ColorModeContextProvider>
       </RefineKbarProvider>
-    </BrowserRouter>
+    </BrowserRouter>)
   );
 }
 
